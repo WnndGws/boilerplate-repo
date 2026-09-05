@@ -1,13 +1,10 @@
 # Repo Title
 ![GitHub last
 commit](https://img.shields.io/github/last-commit/wnndgws/boilerplate-repo)
-
 ![GitHub top
 language](https://img.shields.io/github/languages/top/wnndgws/boilerplate-repo)
-
-![GitHub License](https://img.shields.io/github/license/wnndgws/boilerplate-repo)
-
-[![EffVer Versioning](https://img.shields.io/badge/version_scheme-EffVer-0097a7)](https://jacobtomlinson.dev/effver)
+![GitHub License](https://img.shields.io/github/license/wnndgws/boilerplate-repo)␠
+                                                                                 [![Versioning](https://img.shields.io/badge/version_scheme-EffVer-0097a7)](https://jacobtomlinson.dev/effver)
 
 
 ## Description
@@ -15,7 +12,7 @@ Boilerplate templates for the project types I use most.
 Each branch allows me to reference the tools for that project type.
 ## Quick Start
 There are 4 different boilerplate versions;
-|Number|Branch Name|Use Case|
+|#|Branch Name|Use Case|
 |---|---|---|
 |0| main (This One) | Boilerplate all repos have in common. Almost never the correct branch to use|
 |1| python | If the main file is `python`|
@@ -44,7 +41,10 @@ gh repo create change-this --source=. --remote=origin --push --git-protocol ssh
 ```
 
 ### Usage
-
+The `main` repo contains:
+* `README.md`
+* `LICENSE`
+* `.gitignore`
 
 ### Configuration
 
