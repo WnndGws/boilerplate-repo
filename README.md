@@ -1,8 +1,10 @@
 # Repo Title
 ![GitHub last
 commit](https://img.shields.io/github/last-commit/wnndgws/boilerplate-repo)
+
 ![GitHub top
 language](https://img.shields.io/github/languages/top/wnndgws/boilerplate-repo)
+
 ![GitHub License](https://img.shields.io/github/license/wnndgws/boilerplate-repo)
 
 [![EffVer Versioning](https://img.shields.io/badge/version_scheme-EffVer-0097a7)](https://jacobtomlinson.dev/effver)
@@ -27,7 +29,8 @@ The easiest way to use this is to do the following steps:
 * Delete the `.git` folder
 * Init, add files, and commit to the new repo
 
-[!IMPORTANT] | Change every `change-this` in the commands below
+> [!IMPORTANT]
+> Change every `change-this` in the commands below
 
 ```zsh
 git clone -b change-this --single-branch --depth 1 https://github.com/wnndgws/boilerplate-repo.git change-this
