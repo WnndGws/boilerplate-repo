@@ -1,10 +1,5 @@
 # Repo Title
-![GitHub last
-commit](https://img.shields.io/github/last-commit/wnndgws/boilerplate-repo)
-![GitHub top
-language](https://img.shields.io/github/languages/top/wnndgws/boilerplate-repo)
-![GitHub License](https://img.shields.io/github/license/wnndgws/boilerplate-repo)␠
-                                                                                 [![Versioning](https://img.shields.io/badge/version_scheme-EffVer-0097a7)](https://jacobtomlinson.dev/effver)
+![GitHub last commit](https://img.shields.io/github/last-commit/wnndgws/boilerplate-repo)![GitHub top language](https://img.shields.io/github/languages/top/wnndgws/boilerplate-repo)![GitHub License](https://img.shields.io/github/license/wnndgws/boilerplate-repo)[![Versioning](https://img.shields.io/badge/version_scheme-EffVer-0097a7)](https://jacobtomlinson.dev/effver)![GitHub release](https://img.shields.io/github/v/release/wnndgws/boilerplate-repo)
 
 
 ## Description
@@ -34,19 +29,24 @@ git clone -b change-this --single-branch --depth 1 https://github.com/wnndgws/bo
 cd change-this
 rm -rf .git
 git init
+xargs -n1 curl -s < gitignore_urls.txt >> .gitignore
+xargs -n1 curl -s < repo_gitignore_urls.txt >> .gitignore
+rm gitignore_urls.txt
+rm repo_gitignore_urls.txt
 git add -A
 git commit -m "Initial commit"
 gh repo create change-this --source=. --remote=origin --push --git-protocol ssh
-
 ```
 
 ### Usage
 The `main` repo contains:
 * `README.md`
 * `LICENSE`
-* `.gitignore`
+* A way to generate a `.gitignore`
+* `git-crypt` setup to use my GPG keys
 
 ### Configuration
+* To change which files get encrypted, make changes in `.gitattributes`
 
 ## License
 This project is licensed under the GNU Affero General Public License v3.0.
