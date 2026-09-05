@@ -1,5 +1,5 @@
 # Repo Title
-![GitHub last commit](https://img.shields.io/github/last-commit/wnndgws/boilerplate-repo)![GitHub top language](https://img.shields.io/github/languages/top/wnndgws/boilerplate-repo)![GitHub License](https://img.shields.io/github/license/wnndgws/boilerplate-repo)[![Versioning](https://img.shields.io/badge/version_scheme-EffVer-0097a7)](https://jacobtomlinson.dev/effver)![GitHub release](https://img.shields.io/github/v/release/wnndgws/boilerplate-repo)
+![GitHub last commit](https://img.shields.io/github/last-commit/wnndgws/boilerplate-repo)&nbsp;![GitHub top language](https://img.shields.io/github/languages/top/wnndgws/boilerplate-repo)&nbsp;![GitHub License](https://img.shields.io/github/license/wnndgws/boilerplate-repo)&nbsp;[![Versioning](https://img.shields.io/badge/version_scheme-EffVer-0097a7)](https://jacobtomlinson.dev/effver)&nbsp;![GitHub release](https://img.shields.io/github/v/release/wnndgws/boilerplate-repo)
 
 
 ## Description
