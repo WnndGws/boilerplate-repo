@@ -19,7 +19,6 @@ hooks = [
 
 [[repos]]
 repo = "local"
-
 [[repos.hooks]]
 id = "trufflehog"
 name = "TruffleHog"
@@ -31,7 +30,6 @@ stages = ["pre-commit", "pre-push"]
 
 [[repos]]
 repo = "local"
-
 [[repos.hooks]]
 id = "bandit"
 name = "Bandit"
@@ -39,4 +37,15 @@ description = "A Python source code security analyzer"
 entry = "bandit"
 language = "system"
 types = ["python"]
-stages = ["pre-commit", "pre-push"]
+stages = ["pre-commit"]
+
+[[repos]]
+repo = "local"
+[[repos.hooks]]
+id = "pyrefly"
+name = "Pyrefly"
+entry = "pyrefly check"
+language = "system"
+pass_filenames = true
+types = ["python"]
+stages = ["pre-commit"]
