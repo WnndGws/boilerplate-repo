@@ -49,3 +49,15 @@ language = "system"
 pass_filenames = true
 types = ["python"]
 stages = ["pre-commit"]
+
+[[repos]]
+repo = "https://github.com/jendrikseipp/vulture"
+rev = "v2.15"
+hooks = [{ id = "vulture" }]
+types = ["python"]
+
+[[repos]]
+repo = "https://github.com/abravalheri/validate-pyproject"
+rev = "v0.25"
+hooks = [{ id = "validate-pyproject" }]
+types = ["python"]
