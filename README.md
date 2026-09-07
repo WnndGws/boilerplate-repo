@@ -19,8 +19,8 @@ Each branch allows me to reference the tools for that project type.
 There are 4 different boilerplate versions;
 |#|Branch Name|Use Case|
 |---|---|---|
-|0| main (This One) | Boilerplate all repos have in common. Almost never the correct branch to use|
-|1| python | If the main file is `python`|
+|0| main| Boilerplate all repos have in common. Almost never the correct branch to use|
+|1| python (This One) | If the main file is `python`|
 |2| shell | If the main file is `zsh`, `bash`, or `sh`|
 |3| text | If the main content is `markdown`, `txt`, or `LaTeX`|
 
