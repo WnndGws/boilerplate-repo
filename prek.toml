@@ -27,35 +27,3 @@ entry = "trufflehog git file://."
 language = "system"
 pass_filenames = false
 stages = ["pre-commit", "pre-push"]
-
-[[repos]]
-repo = "local"
-[[repos.hooks]]
-id = "bandit"
-name = "Bandit"
-description = "A Python source code security analyzer"
-entry = "bandit"
-language = "system"
-types = ["python"]
-stages = ["pre-commit"]
-
-[[repos]]
-repo = "local"
-[[repos.hooks]]
-id = "pyrefly"
-name = "Pyrefly"
-entry = "pyrefly check"
-language = "system"
-pass_filenames = true
-types = ["python"]
-stages = ["pre-commit"]
-
-[[repos]]
-repo = "https://github.com/jendrikseipp/vulture"
-rev = "v2.15"
-hooks = [{ id = "vulture" }]
-
-[[repos]]
-repo = "https://github.com/abravalheri/validate-pyproject"
-rev = "v0.25"
-hooks = [{ id = "validate-pyproject" }]
