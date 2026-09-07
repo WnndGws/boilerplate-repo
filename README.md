@@ -61,41 +61,41 @@ The `main` repo contains:
 
 ## Preferred Python tools
 
-|Package|Equivalent|Use-case|
+|Preferred Package|Replaced Package|Use-case|
 |---|---|---|
-|alive-progress |tqdm |Progress bars with live ETA/throughput that stay readable under heavy output|
-|apscheduler |schedule / cron |Async-first in-process job scheduling with persistent job stores|
-|cachebox |cachetools / functools.lru_cache |Fast in-process caches and memoisation with LRU/FIFO/LFU policies (Rust-backed)|
-|duckdb |tinydb / SQLite (analytical) |Embedded columnar SQL database; query Parquet/CSV/JSON locally, first-class Polars interchange|
-|granian |uvicorn / gunicorn |Rust ASGI/RSGI server for FastAPI apps, RSGI-native performance|
-|hypothesis |parameterised pytest cases |Property-based testing; generate inputs and shrink failures automatically|
-|httpx |requests |Sync and async HTTP client, ASGI transport for testing FastAPI apps|
-|humanize |inflect |Readable quantities ("3 days ago", "1.2 MB")|
-|joblib |pickle |Fast, disk-cached persistence of NumPy-heavy objects and parallelism|
-|loguru |logging |Zero-config logging with rotation, colour, sane defaults|
-|markupever |BeautifulSoup4 / lxml |Fast HTML/XML parsing with CSS selectors and DOM manipulation (Rust-backed)|
-|maturin |setuptools + Cython |Build/publish PyO3 Rust extensions to PyPI with one command|
-|msgspec |pydantic (wire formats) / msgpack |Ultra-fast typed msgpack/JSON schemas and serialisation|
-|orjson |json |Fast JSON serialisation of large payloads (Rust-backed)|
-|pathlib |os.path |Object-oriented filesystem paths (this is the modern replacement)|
-|plumbum |subprocess / shell |Composable shell pipelines and remote commands in pure Python|
-|polars |pandas |DataFrame queries with lazy execution, multi-threading, low memory|
-|py-spy |cProfile / pyinstrument |Sampling profiler for running processes, flame graphs, zero instrumentation|
-|pydantic |dataclasses + marshmallow |Typed, validated data models with serialisation|
-|pyright |mypy |Static type checking (VS Code-native, fast, strict by default)|
-|pytest |unittest |Ergonomic test runner with fixtures and parametrisation|
-|python-statemachine |transitions |Declarative state machines with validation, events, and diagram output|
-|questionary |input() / prompt_toolkit |Polished interactive CLI prompts (choices, confirm, autocomplete)|
-|regex |re |Patterns beyond stdlib: recursion, fuzzy matching, POSIX classes|
-|rich |colorama / manual ANSI |Terminal formatting, tables, trees, RichHandler for logs|
-|robyn |FastAPI/Flask |Fast web services on a Rust runtime with built-in workers|
-|tenacity |retrying |Retry with backoff for flaky calls (HTTP, networks)|
-|thefuzz |fuzzywuzzy |String similarity ratios and partial matching (maintained fork)|
-|tomllib |configparser |Stdlib TOML parsing (the modern config format)|
-|typer |argparse (+ click) |CLI apps from type hints; built on click|
-|uv |pip / poetry / pyenv / pipx |All-in-one Rust package manager, lockfiles, Python installs|
-|uvloop |asyncio |Drop-in asyncio event loop replacement built on libuv|
-|whenever |datetime (+ dateutil/arrow) |Timezone-aware datetimes and durations without datetime footguns|
+| [alive-progress](https://github.com/rsalmei/alive-progress) | tqdm | Progress bars with live ETA/throughput that stay readable under heavy output |
+| [apscheduler](https://github.com/agronholm/apscheduler) | schedule / cron | Async-first in-process job scheduling with persistent job stores |
+| [cachebox](https://github.com/awolverp/cachebox) | cachetools / functools.lru_cache | Fast in-process caches and memoisation with LRU/FIFO/LFU policies (Rust-backed) |
+| [duckdb](https://github.com/duckdb/duckdb) | tinydb / SQLite (analytical) | Embedded columnar SQL database; query Parquet/CSV/JSON locally, first-class Polars interchange |
+| [granian](https://github.com/emmett-framework/granian) | uvicorn / gunicorn | Rust ASGI/RSGI server for FastAPI apps, RSGI-native performance |
+| [hypothesis](https://github.com/HypothesisWorks/hypothesis) | parameterised pytest cases | Property-based testing; generate inputs and shrink failures automatically |
+| [httpx](https://github.com/encode/httpx) | requests | Sync and async HTTP client, ASGI transport for testing FastAPI apps |
+| [humanize](https://github.com/python-humanize/humanize) | inflect | Readable quantities ("3 days ago", "1.2 MB") |
+| [joblib](https://github.com/joblib/joblib) | pickle | Fast, disk-cached persistence of NumPy-heavy objects and parallelism |
+| [loguru](https://github.com/Delgan/loguru) | logging | Zero-config logging with rotation, colour, sane defaults |
+| [markupever](https://github.com/awolverp/markupever) | BeautifulSoup4 / lxml | Fast HTML/XML parsing with CSS selectors and DOM manipulation (Rust-backed) |
+| [maturin](https://github.com/PyO3/maturin) | setuptools + Cython | Build/publish PyO3 Rust extensions to PyPI with one command |
+| [msgspec](https://github.com/jcrist/msgspec) | pydantic (wire formats) / msgpack | Ultra-fast typed msgpack/JSON schemas and serialisation |
+| [orjson](https://github.com/ijl/orjson) | json | Fast JSON serialisation of large payloads (Rust-backed) |
+| [pathlib](https://github.com/python/cpython/tree/main/Lib/pathlib.py) | os.path | Object-oriented filesystem paths (this *is* the modern replacement) |
+| [plumbum](https://github.com/tomerfiliba/plumbum) | subprocess / shell | Composable shell pipelines and remote commands in pure Python |
+| [polars](https://github.com/pola-rs/polars) | pandas | DataFrame queries with lazy execution, multi-threading, low memory |
+| [py-spy](https://github.com/benfred/py-spy) | cProfile / pyinstrument | Sampling profiler for running processes, flame graphs, zero instrumentation |
+| [pydantic](https://github.com/pydantic/pydantic) | dataclasses + marshmallow | Typed, validated data models with serialisation |
+| [pyright](https://github.com/microsoft/pyright) | mypy | Static type checking (VS Code-native, fast, strict by default) |
+| [pytest](https://github.com/pytest-dev/pytest) | unittest | Ergonomic test runner with fixtures and parametrisation |
+| [python-statemachine](https://github.com/pythonstatemachine/python-statemachine) | transitions | Declarative state machines with validation, events, and diagram output |
+| [questionary](https://github.com/tmbo/questionary) | input() / prompt_toolkit | Polished interactive CLI prompts (choices, confirm, autocomplete) |
+| [regex](https://github.com/mrabarnett/mrab-regex) | re | Patterns beyond stdlib: recursion, fuzzy matching, POSIX classes |
+| [rich](https://github.com/Textualize/rich) | colorama / manual ANSI | Terminal formatting, tables, trees, `RichHandler` for logs |
+| [robyn](https://github.com/sparckles/robyn) | FastAPI/Flask | Fast web services on a Rust runtime with built-in workers |
+| [tenacity](https://github.com/jd/tenacity) | retrying | Retry with backoff for flaky calls (HTTP, networks) |
+| [thefuzz](https://github.com/seatgeek/thefuzz) | fuzzywuzzy | String similarity ratios and partial matching (maintained fork) |
+| [tomllib](https://github.com/python/cpython/tree/main/Lib/tomllib) | configparser | Stdlib TOML parsing (the modern config format) |
+| [typer](https://github.com/fastapi/typer) | argparse (+ click) | CLI apps from type hints; built on click |
+| [uv](https://github.com/astral-sh/uv) | pip / poetry / pyenv / pipx | All-in-one Rust package manager, lockfiles, Python installs |
+| [uvloop](https://github.com/MagicStack/uvloop) | asyncio | Drop-in asyncio event loop replacement built on libuv |
+| [whenever](https://github.com/ariebovenberg/whenever) | `datetime` (+ dateutil/arrow) | Timezone-aware datetimes and durations without `datetime` footguns |
 
 
 ## License
